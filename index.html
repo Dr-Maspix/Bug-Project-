@@ -138,9 +138,9 @@
 							<div class="appointmnt_wrapper hidden-xs hidden-sm">
 								<ul>
 									<li>
-										<a href="index.html#" class="appint-btn hidden-xs hidden-sm">
-											<div class="btn-front"><i class="fa fa-calendar"></i>Appointment</div>
-											<div class="btn-back"><i class="fa fa-calendar"></i>Appointment</div>
+										<a href="#serviceModal" class="appint-btn hidden-xs hidden-sm" data-toggle="modal">
+											<div class="btn-front"><i class="fa fa-calendar"></i>Service Request</div>
+											<div class="btn-back"><i class="fa fa-calendar"></i>Service Request</div>
 										</a>
 									</li>
 								</ul>
@@ -865,6 +865,65 @@
 			</div>
 		</div>
 		<!--footer wrapper start-->
+		
+		<!-- serviceModal start -->
+		
+		<div class="modal fade" id="serviceModal" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Service Request</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					
+					<div class="modal-body">
+						<ul class="nav nav-tabs">
+							<li class="nav-item active">
+								<a class="nav-link" data-toggle="tab" href="#fastService">Fast Service Request</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" data-toggle="tab" href="#normalService">Normal Service Request</a>
+							</li>
+						</ul>
+						
+						<div class="tab-content">
+							<form method="" action="">
+								<div class="tab-pane active show" id="fastService">
+									<p class="content">Please Enter Your Service Informations</p>
+									<div class="form-group">
+										<input type="text" class="form-control" name="" id="type" required />
+										<label for="type" class="control-label">Service Type</label>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" name="" id="phone" required />
+										<label for="phone" class="control-label">Phone Number</label>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" name="" id="location" required />
+										<label for="location" class="control-label">Location</label>
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" name="" id="mail" required />
+										<label for="mail" class="control-label">E-Mail</label>
+									</div>
+									<div class="form-group">
+										<button type="submit" class="btn btn-default">Send Request</button>
+									</div>
+								</div>
+								
+								<div class="tab-pane fade" id="normalService"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- serviceModal end -->
+		
 		<!--main js files-->
 		<script src="js/jquery_min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
