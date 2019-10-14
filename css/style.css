@@ -396,8 +396,15 @@ ul.colors li #color5 {
     width: auto;
     position: relative;
     list-style: none;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
+
+.top_header_add li:last-child {
+	margin-left:20px;
+	padding-left:25px;
+	border-left:1px solid rgba(225,225,225,.4);
+}
+
 .top_header_add ul li i {
     margin-right: 15px;
     color: #b1150d;
